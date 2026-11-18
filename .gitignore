@@ -1,0 +1,29 @@
+# Dépendances Composer
+/vendor/
+
+# Variables d'environnement
+.env
+.env.*
+
+# Fichiers temporaires
+*.log
+*.tmp
+*.cache
+
+# Sauvegardes HAProxy
+*.bak
+*.backup
+
+# Fichiers temporaires de configuration
+haproxy.cfg.tmp
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# IDE et éditeurs
+.idea/
+.vscode/
+
+# Fichiers générés
+.phpunit.cache/

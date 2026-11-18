@@ -121,29 +121,13 @@ a {
     align-items: center;
     gap: 12px;
 
-    font-size: 16px;
-    font-weight: 700;
-}
-
-.logo-icon {
-    width: 34px;
-    height: 34px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background: var(--primary);
-    color: white;
-
-    border-radius: var(--radius-sm);
-
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 700;
 }
 
 .logo-text {
-    color: var(--text);
+    color: var(--primary);
+    
 }
 
 .sidebar-nav {
@@ -191,8 +175,18 @@ a {
 
 .nav-icon {
     width: 20px;
-    text-align: center;
-    font-size: 17px;
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: currentColor;
+}
+
+.nav-icon svg {
+    width: 19px;
+    height: 19px;
+    display: block;
 }
 
 .sidebar-footer {

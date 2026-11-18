@@ -9,17 +9,17 @@ $pages = [
     'dashboard' => [
         'title' => 'Dashboard',
         'url' => '/',
-        'icon' => '▦'
+        'icon' => '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>'
     ],
     'servers' => [
         'title' => 'Serveurs',
         'url' => '/servers',
-        'icon' => '▤'
+        'icon' => '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01M11 7.5h6M11 16.5h6"/></svg>'
     ],
     'service' => [
         'title' => 'Service HAProxy',
         'url' => '/service',
-        'icon' => '⚙'
+        'icon' => '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83m8.48 8.48 2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48 2.83-2.83"/><circle cx="12" cy="12" r="4"/></svg>'
     ]
 ];
 
@@ -69,7 +69,6 @@ $pageJs = $pageJsFiles[$currentPage] ?? null;
 
             <div class="sidebar-header">
                 <div class="logo">
-                    <span class="logo-icon">H</span>
                     <span class="logo-text">HAProxy Manager</span>
                 </div>
             </div>
@@ -84,7 +83,7 @@ $pageJs = $pageJsFiles[$currentPage] ?? null;
                         href="<?= htmlspecialchars($page['url'], ENT_QUOTES, 'UTF-8') ?>"
                         class="nav-link <?= $currentPage === $key ? 'active' : '' ?>"
                     >
-                        <span class="nav-icon">
+                        <span class="nav-icon" aria-hidden="true">
                             <?= $page['icon'] ?>
                         </span>
 
